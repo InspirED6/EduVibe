@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>EduVibe</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+		<nav>
+			<div class="logo"><img src="images/logo.png" alt="logo"></div>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="#courses_section">Courses</a></li>
+				<li><a href="#portfolio_section">Payments</a></li>
+                <li><a href="#portfolio_section">Profile</a></li>
+
+            </ul>
+			<a class="get-started" href="/LoginSignUp/login.html">Get Started</a>
+
+
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+
+		
+
+		<div class="head-container">
+			<div class="sag-image"><img src="images\Exams-bro.png" alt="sag-image"></div>			
+			<div class="quote">
+					
+				<form action="/action_page.php" style="border:1px solid #ccc">
+				  <div class="container">
+					<h1>Sign Up</h1>
+					<hr>
+				
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+				
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+				
+					<label>
+					  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+					</label>
+									
+					<div class="clearfix">
+					  <button type="submit" class="signupbtn">Sign Up</button>
+					</div>
+				  </div>
+				</form>
+			</div>
+			
+
+
+
+			</div>
+		<div class="side-menu" id="side-menu">
+				<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+				<div class="user">
+					<p>EduVibe</p>
+				</div>
+				<ul>
+					<li><a href="#about_section">About</a></li>
+					<li><a href="#portfolio_section">Portfolio</a></li>
+					<li><a href="#team_section">Team</a></li>
+					<li><a href="#services_section">Services</a></li>
+					<li><a href="#contactus_section">Contact</a></li>
+					<li><a href="#feedBACK">Feedback</a></li>
+				</ul>
+			</div>
+
+
+
+
+
+	<!-- Some Popular Subjects -->
+	<div class="title" >
+
+		<div class="title" id="courses_section">
+
+			<span>EduVibe Topics</span>
+		</div>
+		<br><br>
+		<div class="course">
+			<center>
+				<div class="cbox">
+					<div class="det"><a href="subjects/jee.html"><img src="images/icon/math.png">Maths</a></div>
+					<div class="det"><a href="subjects/gate.html"><img src="images/icon/chemical.png">Chemistry</a></div>
+					<div class="det"><a href="subjects/jee.html#sample_papers"><img src="images/icon/computer-courses.png">Sessions Pdfs</a></div>
+					<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div>
+				</div>
+			</center>
+			<div class="cbox">
+			</div>
+		</div>
+
+	</div>
+
+	<div class="extra">
+		<p>Meet our Teachers</p>
+		<div class="smbox">
+			<span><center><div class="svg-image"><img src="images/Rafik.jpg" alt="svg" ></div></center></span>
+			<span><center><div class="svg-image"><img src="images/Atef.jpg" alt="svg"></div></center></span>
+			
+		</div>
+	</div>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="footer-container">
+				<div class="left-col">
+					<div class="logo"></div>
+					<div class="social-media">
+						<a href="#"><img src="images/icon/fb.png"></a>
+						<a href="#"><img src="images/icon\insta.png"></a>
+						<a href="#"><img src="images/icon\tt.png"></a>
+						<a href="#"><img src="images/icon\ytube.png"></a>
+						<a href="#"><img src="images/icon\linkedin.png"></a>
+					</div><br><br>
+					<p class="rights-text">Copyright © 2024 Created By InspirED All Rights Reserved.</p>
+					<p><img src="images/icon/phone.png"> +201200000000<br><img src="images/icon/mail.png">&nbsp; InspirED@gmail.com</p>
+				</div>
+
+			</div>
+		</footer>
+
+</body>
+</html>
