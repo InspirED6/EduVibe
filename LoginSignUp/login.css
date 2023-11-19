@@ -14,7 +14,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-	background-image: url("LoginSignUp/images/b1.jpg"); /* The image used */
+	background-image: url("images/b1.jpg"); /* The image used */
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover;
