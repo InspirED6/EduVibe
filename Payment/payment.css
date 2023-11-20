@@ -237,7 +237,7 @@ html {
       justify-self: end;
   }
   
-  .logo {
+  .mc {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -246,7 +246,7 @@ html {
     position:relative;
   }
   
-  .logo::after {
+  .mc::after {
     position: absolute;
     content: '';
     width: 2rem;
