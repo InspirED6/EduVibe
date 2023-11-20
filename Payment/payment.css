@@ -1,0 +1,336 @@
+
+html {
+    font-size: 15px;
+
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .box {
+    width: 50px;
+    height: 35px;
+    border: 1px solid #999;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #eee;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    }
+  .pay img{
+    max-height: 300px;
+  }
+
+  .visa img{
+    max-height: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/4;
+    justify-self: end;
+      position: relative;
+
+    }
+
+  body {
+    font-family: 'IBM Plex Mono', monospace;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/money.jpg");
+    background-color: var(--backgroundColor, #65b0fa);
+    line-height: 1.6;
+  }
+  
+
+  footer {
+    color: #E5E8EF;
+    background: #000D;
+    padding: 50px 0; 
+  }
+  footer .footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  footer .social-media img{
+    width: 22px;
+  }
+  footer .logo {
+    width: 180px;
+    color: #fff;
+  }
+  footer .social-media a{
+    margin-right: 10px;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  footer .right-col h1{
+    font-size: 26px;
+  }
+  footer .border{
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #90d1f0, #65b0fa);
+    margin: 2px;
+  }
+  footer .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer input::placeholder {
+    color: white !important;
+  }
+  footer .txtb {
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    background: #343A40;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    min-width: 260px;
+    margin-top: 20px;
+    color: white;
+  }
+  footer .btn {
+    margin-top: 20px;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: linear-gradient(to right, #90d1f0, #65b0fa);
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;	
+  }
+  footer .btn:hover {
+    opacity: .7;
+  }
+
+  @media screen and (max-width: 700px) {
+    footer .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .svg-image img {
+      width: 50%;
+      margin: 20px;
+      /* align-self: center; */
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .footer-container {
+      max-width: 600px;
+    }
+  }
+  .product-container {
+    border: 5px solid #000000;
+    background: #ffffff;
+    width: 75rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 7rem;
+  }
+  
+  
+  
+  .product-container .details .cost {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .product-container .details .title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .card-container {
+    border: 5px solid #000000;
+      background-color: #ffffff;
+      height: 35rem;
+      width: 60rem;
+      margin-left: -32rem;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+  }
+  
+  .card-details {
+    grid-area: 2/1/5/4;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.7rem;
+    width: 90%;
+  }
+  
+  
+
+  .card-number {
+    grid-area: 1/1/1/4;
+    align-self: end;
+  }
+  
+  .card-name {
+    grid-area: 2/1/2/4;
+    align-self: end;
+  }
+  
+  .expires, .cvc {
+    align-self: end;
+    width: 60%;
+  }
+  
+  .field input {
+    border-bottom: 2px solid #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+  }
+  
+  .mastercard {
+    display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-area: 1/4;
+      justify-self: end;
+  }
+  
+  .logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #FCE32F;
+    opacity: 0.8;
+    position:relative;
+  }
+  
+  .logo::after {
+    position: absolute;
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: #EA6564;
+    border-radius: 50%;
+    left: -50%;
+  }
+  
+  .name {
+    font-size: 1rem;
+  }
+  
+  .purchase-button {
+    font-family: 'IBM Plex Mono', monospace;
+      padding: 1rem 1.25rem;
+      position: relative;
+      background-color: #000000;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.02rem;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      border: transparent;
+      grid-area: 5/4;
+  }
+  
+  .purchase-button::after {
+    content: attr(data-content);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #65b0fa;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    transform: translate(-0.4rem,-0.4rem);
+    transition: transform .2s cubic-bezier(.34,1.56,.64,1);
+  }
+  
+  .purchase-button:hover::after {
+    transform: translate(0,0);
+  }
+  
+  @media screen and (max-width: 1050px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .product-container {
+      width: 100%;
+      border-color: transparent;
+      height: 35rem;
+      align-items: center;
+      padding: 1.5rem;
+      justify-content: end;
+    }
+    
+    
+    .product-container .details {
+      text-align: center;
+    }
+    
+    .card-container {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      border-color: transparent;
+      margin-left: 0;
+    }
+    
+    .field label {
+      font-size: 1.3rem;
+    }
+    
+    .card-details {
+      grid-area: 2/1/5/5;
+    }
+  }
+  
