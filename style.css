@@ -11,6 +11,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
 body {
 	background: #FFF;
 	font-family: 'Open Sans', sans-serif;
@@ -23,6 +24,7 @@ header {
 .black {
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
 nav {
 	padding-top: 20px;
 	padding-bottom: 20px;
