@@ -26,8 +26,8 @@
 		<nav>
 			<div class="logo"><img src="images/logo.png" alt="logo"></div>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="/courses.html">Courses</a></li>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="#courses_section">Courses</a></li>
 				<li><a href="/Payment/payments.html">Payments</a></li>
                 <li><a href="/Profile/profile.html">Profile</a></li>
 
@@ -39,6 +39,8 @@
 		</nav>
 
 		<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
 nav {
@@ -101,33 +103,69 @@ nav ul li a:hover {
 	cursor: pointer;
 	transition: all 1s;
 }
+.title
+{
+    
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 500;
+
+
+}
+.svg-image img{
+	width: 200px;
+	
+	border-radius: 10px;
+}
+
+.sag-image img{
+	margin-bottom: 50px;
+	width: 500px;
+		
+	border-radius: 10px;
+
+}
+.cbox {
+	position: relative;
+	width: 50%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cbox .det {
+	width: 500px;
+	height: 160px;
+	margin: 10px;
+	background: #fff;
+	cursor: pointer;
+	margin-bottom: 100px;
+}
+.cbox .det a{
+	justify-content: space-around;
+	width: 500px;
+	padding: 56px;
+	border-radius: 10px;
+	border: 3px solid #90d1f0;
+	font-size: 30px;
+	color: #272529;
+	font-family: cursive;
+	text-decoration: none;
+}
+.cbox .det a:hover {
+	background: linear-gradient(to right, #90d1f0, #65b0fa);
+	color: white;
+}
+
+.cbox img {
+	width: 100px;
+	align-items: center;
+}
+
 		</style>
 
 		<div class="head-container">
-			<div class="sag-image"><img src="images/Exams-bro.png" alt="sag-image"></div>			
-			<div class="quote">
-					
-				<form action="/action_page.php" style="border:1px solid #ccc">
-				  <div class="container">
-					<h1>Sign Up</h1>
-					<hr>
-				
-					<label for="email"><b>Email</b></label>
-					<input type="text" placeholder="Enter Email" name="email" required>
-				
-					<label for="psw"><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="psw" required>
-				
-					<label>
-					  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-					</label>
-									
-					<div class="clearfix">
-					  <button type="submit" class="signupbtn">Sign Up</button>
-					</div>
-				  </div>
-				</form>
-			</div>
+			<div class="sag-image"><img src="images/courses.jpg" alt="sag-image">
+            </div>			
+			
 			
 
 
@@ -157,16 +195,15 @@ nav ul li a:hover {
 
 		<div class="title" id="courses_section">
 
-			<span>EduVibe Topics</span>
+			<span> Choose your Course Our Hero </span>
 		</div>
 		<br><br>
 		<div class="course">
 			<center>
 				<div class="cbox">
-					<div class="det"><a href="/Subject/Maths.html"><img src="images/icon/math.png">Maths</a></div>
-					<div class="det"><a href="/Subject/Chem.html"><img src="images/icon/chemical.png">Chemistry</a></div>
-					<div class="det"><a href="subjects/jee.html#sample_papers"><img src="images/icon/computer-courses.png">Sessions Pdfs</a></div>
-					<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div>
+					<div class="det"><a href="/Subject/Maths.html"><img src="images/logo 1.png"> Mathematics</a></div>
+					<div class="det"><a href="/Subject/Chem.html"><img src="images/logo 2.png">Chemistry</a></div>
+					
 				</div>
 			</center>
 			<div class="cbox">
@@ -175,14 +212,7 @@ nav ul li a:hover {
 
 	</div>
 
-	<div class="extra">
-		<p>Meet our Teachers</p>
-		<div class="smbox">
-			<span><center><div class="svg-image"><img src="images/Rafik.jpg" alt="svg" ></div></center></span>
-			<span><center><div class="svg-image"><img src="images/Atef.jpg" alt="svg"></div></center></span>
-			
-		</div>
-	</div>
+	
 
 
 
